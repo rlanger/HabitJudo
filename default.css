@@ -1,0 +1,460 @@
+/*
+Template name: Bright Pixel
+Template URI: http://templates.arcsin.se/bright-pixel-website-template/
+Release date: 2006-05-07
+Description: A smooth, monochrome, lightweight design.
+Author: Viktor Persson
+Author URI: http://arcsin.se/
+
+This template is licensed under a Creative Commons Attribution 2.5 License:
+http://templates.arcsin.se/license/
+*/
+
+/* standard elements */
+a {
+	color: #000;
+	text-decoration: none;
+}
+body {
+	background: #CCC url(img/bg.gif) repeat-y fixed bottom center;
+	color: #333;
+	margin: 20px 0;
+	text-align: center;
+	font-family: 'Trebuchet MS', 'Lucida Grande',
+		  Verdana, Lucida, Geneva, Helvetica, 
+	  Arial, sans-serif;
+	font-size:14px;
+}
+.gfx a {
+	background: #F5F5F5 url(img/habitjudo.png) no-repeat; display: block; height: 240px;
+}
+
+/* header */
+.header {
+	background: #FFF;
+	border-bottom: 1px solid #E5E5E5;
+	font: bold 1.6em Arial;
+	line-height: 3em;
+}
+
+/* main */
+.main {
+	background: #FFF; 
+	border: 3px double #EEE; 
+	border-color: #E4E4E4 #CFCFCF #CCC #CFCFCF; 
+	margin: 20px auto 4px auto; 
+	text-align: left;
+	line-height:150%;
+	width: 590px; 
+}
+.container {
+	margin: 10px;
+}
+
+
+/* content */
+.content {
+	background: #F5F5F5;
+	border-top: 1px solid #E5E5E5;
+	clear: both;
+}
+.content h1 {
+	margin: 0;
+	font: bold 1.1em sans-serif,Arial;
+	color: #666;
+}
+.content p {
+	margin: 3px 0 6px; color: #666;
+}
+.item {
+	background: #FCFCFC url(img/bgitem.gif) repeat-x;
+	padding: 10px;
+}
+
+.progressitem {
+	padding: 10px;
+	background: #FCFCFC;
+}
+
+/* footer */
+.footer {
+	padding: 5px;
+	background: #F5F5F5;
+	color: #666;
+}
+.footer .left, .footer .right {padding: 0 12px;}
+.footer .right, .footer .right a {color: #AAA;}
+.footer .right a:hover {color: #444;}
+
+/* floats */
+.left {float: left;}
+.right {float: right;}
+.clearer {clear: both;}
+
+
+
+/* Mine */
+
+.score {
+	float: right;
+}
+
+
+.total {
+	width:95%;
+	text-align:right;
+	font-size:20px;
+	color:#000;
+	
+}
+
+.textright {
+	width:95%;
+	text-align:right;
+	font-size:14px;
+	color:#000;
+	
+}
+
+.textleft {
+	width:95%;
+	text-align:left;
+	font-size:14px;
+	color:#000;
+	
+}
+
+
+
+
+/* CSS markup below taken from http://www.alistapart.com/articles/taminglists/ */
+
+.button {
+	width: 90%;
+	/*border: 1px solid #000;*/
+	padding: 0 0 0 0;
+	font-family: 'Trebuchet MS', 'Lucida Grande',
+	  Verdana, Lucida, Geneva, Helvetica, 
+	  Arial, sans-serif;
+	font-size:14px;
+	background-color: #fff;
+	color: #333;
+}
+	
+.button ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		border: none;
+}
+		
+.button li {
+		margin: 1em;
+		border: 1px solid #000;
+		display: block;
+		padding: 5px 5px 5px 0.5em;
+		background-color: #fff;
+		color: #000;
+		text-decoration: none;
+		width: 100%;
+		text-align:center;
+
+
+}
+
+.button li a {
+
+}
+
+.button li a img {
+		float:right;
+}
+
+html>body .button li a {
+		width: auto;
+}
+
+.button li:active {
+		background-color: red;
+		color: #fff;
+}
+
+
+
+
+
+/* CSS markup below taken from http://css-tricks.com/css3-progress-bars/ */
+.meter {
+	height: 20px;  /* Can be anything */
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+	box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.meter > span {
+	display: block;
+	height: 100%;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	background-color: rgb(43,194,83);
+	background-image: -webkit-gradient(
+	  linear,
+	  left bottom,
+	  left top,
+	  color-stop(0, rgb(43,194,83)),
+	  color-stop(1, rgb(84,240,84))
+	 );
+	background-image: -webkit-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -moz-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -ms-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -o-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	-webkit-box-shadow:
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	-moz-box-shadow:
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	overflow: hidden;
+}
+
+.orange > span {
+	background-color: #f1a165;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f1a165),color-stop(1, #f36d0a));
+	background-image: -webkit-linear-gradient(top, #f1a165, #f36d0a);
+        background-image: -moz-linear-gradient(top, #f1a165, #f36d0a);
+        background-image: -ms-linear-gradient(top, #f1a165, #f36d0a);
+        background-image: -o-linear-gradient(top, #f1a165, #f36d0a);
+}
+
+.red > span {
+	background-color: #f0a3a3;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f0a3a3),color-stop(1, #f42323));
+	background-image: -webkit-linear-gradient(top, #f0a3a3, #f42323);
+        background-image: -moz-linear-gradient(top, #f0a3a3, #f42323);
+        background-image: -ms-linear-gradient(top, #f0a3a3, #f42323);
+        background-image: -o-linear-gradient(top, #f0a3a3, #f42323);
+}
+
+.white > span {
+	background-color: #fff;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #fff),color-stop(1, #ccc));
+	background-image: -webkit-linear-gradient(top, #fff, #ccc);
+        background-image: -moz-linear-gradient(top, #fff, #ccc);
+        background-image: -ms-linear-gradient(top, #fff, #ccc);
+        background-image: -o-linear-gradient(top, #fff, #ccc);
+	 
+ }
+ 
+.whiteyellow > span {
+	background-color: #ffffcc;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffffcc),color-stop(1, #ffff99));
+	background-image: -webkit-linear-gradient(top, #ffffcc, #ffff99);
+        background-image: -moz-linear-gradient(top, #ffffcc, #ffff99);
+        background-image: -ms-linear-gradient(top, #ffffcc, #ffff99);
+        background-image: -o-linear-gradient(top, #ffffcc, #ffff99);
+	 
+ }
+ 
+ .yellow > span {
+	background-color: #ffff66;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffff66),color-stop(1, #ffff00));
+	background-image: -webkit-linear-gradient(top, #ffff66, #ffff00);
+        background-image: -moz-linear-gradient(top, #ffff66, #ffff00);
+        background-image: -ms-linear-gradient(top, #ffff66, #ffff00);
+        background-image: -o-linear-gradient(top, #ffff66, #ffff00);
+	 
+ }
+ 
+ .yelloworange > span {
+	background-color: #ffff00;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffff00),color-stop(1, #ff9900));
+	background-image: -webkit-linear-gradient(top, #ffff00, #ff9900);
+        background-image: -moz-linear-gradient(top, #ffff00, #ff9900);
+        background-image: -ms-linear-gradient(top, #ffff00, #ff9900);
+        background-image: -o-linear-gradient(top, #ffff00, #ff9900);
+	 
+ }
+ 
+ .orange > span {
+	background-color: #ff9966;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ff9966),color-stop(1, #ff6600));
+	background-image: -webkit-linear-gradient(top, #ff9966, #ff6600);
+        background-image: -moz-linear-gradient(top, #ff9966, #ff6600);
+        background-image: -ms-linear-gradient(top, #ff9966, #ff6600);
+        background-image: -o-linear-gradient(top, #ff9966, #ff6600);
+	 
+ }
+ 
+.orangegreen > span {
+	background-color: #33ff00;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #33ff00),color-stop(1, #ff6600));
+	background-image: -webkit-linear-gradient(top, #33ff00, #ff6600);
+        background-image: -moz-linear-gradient(top, #33ff00, #ff6600);
+        background-image: -ms-linear-gradient(top, #33ff00, #ff6600);
+        background-image: -o-linear-gradient(top, #33ff00, #ff6600);
+	 
+ }
+ 
+.green > span {
+	background-color: #66ff00;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #66ff00),color-stop(1, #00cc00));
+	background-image: -webkit-linear-gradient(top, #66ff00, #00cc00);
+        background-image: -moz-linear-gradient(top, #66ff00, #00cc00);
+        background-image: -ms-linear-gradient(top, #66ff00, #00cc00);
+        background-image: -o-linear-gradient(top, #66ff00, #00cc00);
+	 
+ }
+ 
+.greenblue > span {
+	background-color: #66ff00;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #66ff00),color-stop(1, #0099ff));
+	background-image: -webkit-linear-gradient(top, #66ff00, #0099ff);
+        background-image: -moz-linear-gradient(top, #66ff00, #0099ff);
+        background-image: -ms-linear-gradient(top, #66ff00, #0099ff);
+        background-image: -o-linear-gradient(top, #66ff00, #0099ff);
+	 
+ }
+ 
+.blue > span {
+	background-color: #3399cc;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #3399cc),color-stop(1, #3399ff));
+	background-image: -webkit-linear-gradient(top, #3399cc, #3399ff);
+        background-image: -moz-linear-gradient(top, #3399cc, #3399ff);
+        background-image: -ms-linear-gradient(top, #3399cc, #3399ff);
+        background-image: -o-linear-gradient(top, #3399cc, #3399ff);
+	 
+ }
+ 
+.bluebrown > span {
+	background-color: #66ccff;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #66ccff),color-stop(1, #993300));
+	background-image: -webkit-linear-gradient(top, #66ccff, #993300);
+        background-image: -moz-linear-gradient(top, #66ccff, #993300);
+        background-image: -ms-linear-gradient(top, #66ccff, #993300);
+        background-image: -o-linear-gradient(top, #66ccff, #993300);
+	 
+ }
+ 
+.brown > span {
+	background-color: #cc6633;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #cc6633),color-stop(1, #993300));
+	background-image: -webkit-linear-gradient(top, #cc6633, #993300);
+        background-image: -moz-linear-gradient(top, #cc6633, #993300);
+        background-image: -ms-linear-gradient(top, #cc6633, #993300);
+        background-image: -o-linear-gradient(top, #cc6633, #993300);
+	 
+ }
+
+
+
+
+
+.meter > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image:
+	   -webkit-gradient(linear, 0 0, 100% 100%,
+	      color-stop(.25, rgba(255, 255, 255, .2)),
+	      color-stop(.25, transparent), color-stop(.5, transparent),
+	      color-stop(.5, rgba(255, 255, 255, .2)),
+	      color-stop(.75, rgba(255, 255, 255, .2)),
+	      color-stop(.75, transparent), to(transparent)
+	   );
+	background-image:
+		-webkit-linear-gradient(
+		  -45deg,
+	      rgba(255, 255, 255, .2) 25%,
+	      transparent 25%,
+	      transparent 50%,
+	      rgba(255, 255, 255, .2) 50%,
+	      rgba(255, 255, 255, .2) 75%,
+	      transparent 75%,
+	      transparent
+	   );
+	background-image:
+		-moz-linear-gradient(
+		  -45deg,
+	      rgba(255, 255, 255, .2) 25%,
+	      transparent 25%,
+	      transparent 50%,
+	      rgba(255, 255, 255, .2) 50%,
+	      rgba(255, 255, 255, .2) 75%,
+	      transparent 75%,
+	      transparent
+	   );
+	background-image:
+		-ms-linear-gradient(
+		  -45deg,
+	      rgba(255, 255, 255, .2) 25%,
+	      transparent 25%,
+	      transparent 50%,
+	      rgba(255, 255, 255, .2) 50%,
+	      rgba(255, 255, 255, .2) 75%,
+	      transparent 75%,
+	      transparent
+	   );
+	background-image:
+		-o-linear-gradient(
+		  -45deg,
+	      rgba(255, 255, 255, .2) 25%,
+	      transparent 25%,
+	      transparent 50%,
+	      rgba(255, 255, 255, .2) 50%,
+	      rgba(255, 255, 255, .2) 75%,
+	      transparent 75%,
+	      transparent
+	   );
+	z-index: 1;
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 50px 50px;
+	-webkit-animation: move 2s linear infinite;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	overflow: hidden;
+}
+
+/* Trophy image from http://www.wpclipart.com/recreation/trophy/gold_trophy.png.html */

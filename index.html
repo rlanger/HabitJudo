@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        color: #222;
+        font: 14px Arial;
+      }
+    </style>
+     <link href="default.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="habitscript.js"></script>
+
+  </head>
+  <body onLoad="init();">
+
+<div class="main">
+
+  <div class="container">
+
+		<div class="gfx"><a href="index.html"><span></span></a></div>
+
+	<div class="content">
+    
+     <div class="item">
+
+    <div class="button">
+    <ul>
+    <li><a href="http://www.habitjudo.com/">What is Habit Judo?</a></li>
+    </ul>
+    </div>
+    </div>
+
+	<div class="progressitem">
+        
+		<p><div class="textleft">Current Level: <span id="currentlvl"></span><span class="score"><span id="total"></span>/<span id="levelup"></span></span></div></p>
+		
+        <span id="progress">
+        </span>
+        
+        </div></div>
+        <div class="textright">
+        <p>Next Level: <span id="nextlvl"></span></p>
+        </div>
+    </div>
+    <div class="item">
+    <h1>Habits</h1>
+    
+  	<div class="button">
+    <ul id="todoItems">
+    </ul>
+    </div>
+   
+   	<div class="right">
+    <form type="post" onSubmit="addTodo(); return false;">
+      <input type="text" id="todo" name="todo" placeholder="What habit would you like to develop?" style="width: 400px;" />
+      <input type="submit" value="Add Habit"/>
+    </form>
+    </div>
+    
+    </div>
+   <div class="item" style="margin-top:50px">
+    <h1>Log</h1>
+    
+    <table id="log" cellpadding="10px">
+    </table>
+    
+    	  </div>
+	  </div>
+	</div>
+</div>
+  </body>
+</html>​
